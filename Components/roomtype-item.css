@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#roomtype-item {
+  margin: 10px 70px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #727070;
+}
+
+#roomtype-item .img-room {
+  width: 20%;
+}
+
+#roomtype-item .name {
+  width: 20%;
+  border-right: 1px solid #ddd;
+}
+
+#roomtype-item .name .star .fas {
+  color: yellow;
+}
+
+#roomtype-item .detail {
+  width: 20%;
+  border-right: 1px solid #ddd;
+}
+
+#roomtype-item .price {
+  width: 20%;
+  border-right: 1px solid #ddd;
+}
+
+#roomtype-item .book {
+  width: 20%;
+}
