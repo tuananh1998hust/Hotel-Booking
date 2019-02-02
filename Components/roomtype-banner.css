@@ -1,0 +1,11 @@
+#banner {
+  background-image: url('../Images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+#banner .overlay {
+  padding: 15px 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
