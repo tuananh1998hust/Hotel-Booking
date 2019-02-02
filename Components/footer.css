@@ -1,0 +1,14 @@
+#footer {
+  padding: 10px 150px;
+  background-color: #fafafa;
+}
+
+#footer .fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
