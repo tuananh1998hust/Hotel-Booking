@@ -1,0 +1,29 @@
+#check-availability {
+  padding: 20px 150px;
+  width: 100%;
+}
+
+#check-availability .room {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .adults {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .children {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .month {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .date {
+  width: 15%;
+  border-radius: 5px;
+}
