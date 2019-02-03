@@ -1,0 +1,11 @@
+.service-item {
+  width: 25%;
+  height: 182.5px;
+  border: 1px solid #dfd2bf;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.service-item:hover {
+  background-color: #dad2c2;
+}
