@@ -1,0 +1,123 @@
+#navbar {
+  background-color: #333;
+  padding: 15px 15px 15px 150px;
+}
+
+#banner .img-banner {
+  width: 100%;
+}
+
+#check-availability {
+  padding: 20px 150px;
+  width: 100%;
+}
+
+#check-availability .room {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .adults {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .children {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .month {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#check-availability .date {
+  width: 15%;
+  border-radius: 5px;
+}
+
+#room-service .service-item {
+  width: 25%;
+  height: 182.5px;
+  border: 1px solid #dfd2bf;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#room-service .service-item:hover {
+  background-color: #dad2c2;
+}
+
+#food-menu {
+  margin-top: 50px;
+}
+
+#food-menu .food-item {
+  background-color: #f5e2e2;
+  border-radius: 15px;
+}
+
+#photo-gallery {
+  margin: 50px 0;
+}
+
+#photo-gallery .images-item-row {
+  margin-bottom: 50px;
+}
+
+#photo-gallery .images-item-row .images-item {
+  width: 30%;
+  padding: 10px;
+}
+
+.contact {
+  border: 1px solid #ddd;
+  background-color: #fdeaea;
+}
+
+.contact .img-check {
+  width: 108px;
+  height: 108px;
+}
+
+.contact .fb {
+  color: #fff;
+  background-color: #337ab7;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.contact .tweet {
+  color: #fff;
+  background-color: #039be5;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.contact .google {
+  color: #fff;
+  background-color: #dd4b39;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+#contact {
+  padding: 10px 50px;
+  margin: 50px 0;
+}
+
+#footer {
+  padding: 10px 150px;
+  background-color: #fafafa;
+}
+
+#footer .fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
