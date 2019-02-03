@@ -1,0 +1,8 @@
+.images-item-row {
+  margin-bottom: 50px;
+}
+
+.images-item-row .images-item {
+  width: 30%;
+  padding: 10px;
+}
