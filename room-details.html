@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font AweSome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Static CSS -->
+    <link rel="stylesheet" href="CSS/room-details.css">
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/">
+        <img class="logo" src="./Images/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-3">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Rooms
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">All Suite Rooms</a>
+              <a class="dropdown-item" href="#">Room Details</a>
+              <a class="dropdown-item" href="#">Room Details Blocks</a>
+              <a class="dropdown-item" href="#">Room Parallax</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Events</a>
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- banner -->
+    <div id="banner">
+      <img src="./Images/room-details/banner.jpg" alt="banner" class="img-banner" />
+    </div>
+    <!-- end banner -->
+
+    <!-- check availability -->
+    <div id="check-availability" class="d-flex flex-column bg-dark">
+      <h4 class="text-white mb-3 p-2">CHECK AVAILABILITY</h4>
+      <div class="mb-3">
+        <select class="room ml-2 p-2">
+          <option class="room-detail">Select Room</option>
+          <option class="room-detail">Master Suite</option>
+          <option class="room-detail">Mini - Suite</option>
+          <option class="room-detail">Ultra Deluxe</option>
+          <option class="room-detail">Luxury</option>
+          <option class="room-detail">Premium</option>
+          <option class="room-detail">Normal</option>
+        </select>
+
+        <select class="adults ml-2 p-2">
+          <option class="adults-detail">No of Adults</option>
+          <option class="adults-detail">1</option>
+          <option class="adults-detail">2</option>
+          <option class="adults-detail">3</option>
+          <option class="adults-detail">4</option>
+        </select>
+
+        <select class="children ml-2 p-2">
+          <option class="children-detail">No of childrens</option>
+          <option class="children-detail">1</option>
+          <option class="children-detail">2</option>
+          <option class="children-detail">3</option>
+          <option class="children-detail">4</option>
+        </select>
+
+        <select class="month ml-2 p-2">
+          <option class="month-detail">Month</option>
+          <option class="month-detail">01</option>
+          <option class="month-detail">02</option>
+          <option class="month-detail">03</option>
+          <option class="month-detail">04</option>
+          <option class="month-detail">05</option>
+          <option class="month-detail">06</option>
+          <option class="month-detail">07</option>
+          <option class="month-detail">08</option>
+          <option class="month-detail">09</option>
+          <option class="month-detail">10</option>
+          <option class="month-detail">11</option>
+          <option class="month-detail">12</option>
+        </select>
+
+        <input class="date ml-2 p-2" type="text" placeholder="Date">
+
+        <button class="btn btn-danger ml-2 p-2">Submit</button>
+      </div>
+    </div>
+    <!-- end check-availability -->
+
+    <!-- container -->
+    <div class="container">
+      <div class="row" style="margin-top: 50px">
+        <div class="col-sm-12 col-md-8">
+          <!-- room details head -->
+          <div id="room-details-head">
+            <h2 class="title mb-3">Master Suite Room</h2>
+            <p class="text-secondary border-bottom border-secondary pb-2">Aliquam id tempor sem. Cras molestie risus et lobortis congue. Donec id est consectetur, cursus tellus at, mattis lacus.</p>
+            <p class="text-secondary mt-4 mb-5">
+              Maecenas erat lorem, vulputate sed ex at, vehicula dignissim risus. Nullam non nisi congue elit cursus tempus. Nunc vel ante nec libero semper maximus. Donec cursus sed massa eget commodo. Phasellus semper neque id iaculis malesuada. Nulla efficitur dui vitae orci blandit tempor. Mauris sed venenatis nibh, sed sodales risus.
+  Nam sit amet tortor in elit fermentum consectetur et sit amet eros. Sed varius velit at eros tempor sodales. Fusce at enim at lectus sollicitudin pharetra at in risus. Donec ut semper turpis. Maecenas lobortis ante ut eros scelerisque, at semper augue ullamcorper.
+            </p>
+          </div>
+          <!-- end room details head -->
+
+          <!-- room service -->
+          <div id="room-service">
+            <h2 class="title mb-3">Service Room</h2>
+            <p class="text-secondary border-bottom border-secondary pb-2">Aliquam id tempor sem. Cras molestie risus et lobortis congue. Donec id est consectetur, cursus tellus at, mattis lacus.</p>
+            <div class="d-flex align-items-center mt-4 mb-4">
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/television.png" alt="tv" class="icon mb-4">
+                <p class="mb-2">Televisions</p>
+              </div>
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/wifi.png" alt="wifi" class="icon mb-4">
+                <p class="mb-2">Wifi</p>
+              </div>
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/phone-call.png" alt="phone" class="icon mb-4">
+                <p class="mb-2">Phone</p>
+              </div>
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/shower.png" alt="shower" class="icon mb-4">
+                <p class="mb-2">Shower</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/air-conditioner.png" alt="air-conditional" class="icon mb-4">
+                <p class="mb-2">Air Conditional</p>
+              </div>
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/first-aid-kit.png" alt="tv" class="icon mb-4">
+                <p class="mb-2">Medical</p>
+              </div>
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/meal.png" alt="meal" class="icon mb-4">
+                <p class="mb-2">Meal</p>
+              </div>
+              <div class="service-item d-flex flex-column align-items-center justify-content-center">
+                <img src="./Images/room-details/icon/coffee-cup.png" alt="cafe" class="icon mb-4">
+                <p class="mb-2">Televisions</p>
+              </div>
+            </div>
+          </div>
+          <!-- end room service -->
+
+          <!-- food menu -->
+          <div id="food-menu">
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/1.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/2.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/3.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/4.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/5.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/6.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/7.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+            <div class="food-item d-flex align-items-center p-3 mb-2">
+              <img class="food-img" src="./Images//room-details/food-menu/8.jpg" alt="food-img">
+              <div class="flex-grow-1 ml-4">
+                <h2 class="mb-2">salted fried chicken</h2>
+                <p class="mb-2">Tomato soup with croutons, small ceasar salad, apple juice</p>
+              </div>
+              <button class="btn btn-outline-warning">$45</button>
+            </div>
+          </div>
+          <!-- end food menu -->
+
+          <!-- photo gallery -->
+          <div id="photo-gallery">
+            <h3 class="title mb-2">
+              Photo Gallery
+            </h3>
+            <p class="mb-4">Aliquam id tempor sem. Cras molestie risus et lobortis congue. Donec id est consectetur, cursus tellus at, mattis lacus.</p>
+
+            <div class="images-item-row d-flex align-items-center justify-content-center mb-2">
+              <img src="./Images/room-details/photo-gallery/1.jpg" class="images-item">
+              <img src="./Images/room-details/photo-gallery/2.jpg" class="images-item">
+              <img src="./Images/room-details/photo-gallery/3.jpg" class="images-item">
+            </div>
+
+            <div class="images-item-row d-flex align-items-center justify-content-center mb-2">
+              <img src="./Images/room-details/photo-gallery/4.jpg" class="images-item">
+              <img src="./Images/room-details/photo-gallery/5.jpg" class="images-item">
+              <img src="./Images/room-details/photo-gallery/6.jpg" class="images-item">
+            </div>
+          </div>
+          <!-- end photo gallery -->
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="contact d-flex flex-column align-items-center p-3 mb-4">
+              <img src="./Images/room-details/contact-check/phone-call.png" alt="phone" class="img-check mb-4">
+              <p class="text-secondary mb-2">CHECK AVAILABILITY. CALL US!</p>
+              <h2 class="mb-2">+01 4214 4214</h2>
+              <p class="text-secondary mb-2">We are available 24/7 Monday to Sunday</p>
+              <button class="btn btn-danger btn-block">Call Now</button>
+            </div>
+
+            <div class="contact d-flex flex-column align-items-center p-3 mb-4">
+              <p class="mb-2">Bookmark listing</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="fb mr-2">
+                  <i class="fab fa-facebook-f mr-1" style="color:#fff"></i> share
+                </a>
+                <a href="#" class="tweet mr-1">
+                  <i class="fab fa-twitter mr-1" style="color: #fff"></i> Tweet
+                </a>
+                <a href="#" class="google mr-1">
+                  <i class="fab fa-google-plus-g mr-1" style="color: #fff">share</i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact d-flex flex-column align-items-center p-3 mb-4">
+              <h3 class="mb-3">We Accept</h3>
+              <img src="./Images/room-details/contact-check/card.png" alt="card" class="mb-3">
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 d-flex flex-column">
+          <h3 class="mb-3">Hotels Booking</h3>
+          <p class="mb-2 text-secondary">Hotels worldwide incl. Infos, Ratings and Photos. Make your Hotel Reservation cheap.</p>
+          <p class="mb-2 text-secondary">The top-rated hotel booking services.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-3 d-flex flex-column">
+          <h3 class="mb-3">Support & Help</h3>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">Dashboard</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">Booking</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">About Us</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">Blog</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 d-flex flex-column">
+          <h3 class="mb-3">Cities Covered</h3>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">Sydney</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">Copehagen</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">Vancouver</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check"></i>
+            <p class="mb-0 ml-2 text-secondary">Vienna</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 d-flex flex-column">
+          <h3 class="mb-3">Address</h3>
+          <p class="mb-3 text-secondary">28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
+          <h5 class="mb-3">PHONE: +01 1245 2541</h5>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <footer id="footer" class="fixed-bottom">
+      <div class="row">
+        <div class="col-6">
+          <div class="contact d-flex align-items-center">
+              <i class="fab fa-facebook-f ml-2"></i>
+              <i class="fab fa-google-plus-g ml-2"></i>
+              <i class="fab fa-twitter ml-2"></i>
+
+              <div class="d-flex align-items-center phone ml-5">
+                <h4 class="m-0">Phone:</h4>
+                <p class="m-0 pl-2">(+404) 142 21 23 78</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <img src="./Images/card.png" alt="card">
+          <a href="#" class="btn btn-danger ml-5">Room Reservation</a>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
